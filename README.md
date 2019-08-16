@@ -1,31 +1,31 @@
 # Chatspace DB設計
-##Usersテーブル
+## Usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
-###Association
+### Association
 - has_many :groups_users
 - has_many  :users,  through:  :groups_users
 
 
-##groupsテーブル
+## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |groupname|string|null: false|
 |user_id|integer|null: false, foreign_key: true|
-###Association
-has_many :groups_users
-has_many :groups, through: :groups_users
+### Association
+- has_many :groups_users
+- has_many :groups, through: :groups_users
 
 
-##messegesテーブル
+## messegesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null: false|
 |image|text|null: false|
-###Association
+### Association
 - belongs_to :user
 - has_many :groups
 
