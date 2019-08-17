@@ -28,7 +28,7 @@ has_many :groups, through: :groups_users
 ###Association
 - belongs_to :user
 - has_many :groups
-
+aaa
 
 ## groups_usersテーブル
 |Column|Type|Options|
