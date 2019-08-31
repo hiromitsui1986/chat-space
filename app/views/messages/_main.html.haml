@@ -1,0 +1,42 @@
+.main
+  .header 
+    .left-header
+      .left-header__group
+        group name
+      %ul.left-header__name
+        names : 
+        %li.name
+          name
+        %li.name
+          name
+    .right-header
+      .right-header__btn
+        edit
+
+  .contents
+    .content
+      .main-content-message
+        .main-content-message__user
+          test-user
+        .main-content-message__data
+          2019/8/27
+      .under-content-message
+        .main-content-message__text 
+          こんにちは！   
+      .main-content-message
+        .main-content-message__user
+          test-user
+        .main-content-message__data
+          2019/8/27
+      .under-content-message
+        .main-content-message__text 
+          こんにちは！   
+          
+  .form
+    %form
+      %input.form__message 
+      .form__mask
+        %label.form__mask
+          = fa_icon 'picture-o', class: 'fa-1x' 
+          %input.hidden{type: 'file'} 
+      %input.form__submit{type: 'submit', value: 'Send'} 
