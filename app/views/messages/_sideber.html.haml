@@ -2,10 +2,12 @@
   .sideber__header
     .sideber__header__box
       .sideber__header__box-name
-        test-user 
+        = current_user.name
       .sideber__header__box-list
         =fa_icon "pencil-square-o"
-        =fa_icon "cog"
+        = link_to edit_user_path(current_user) do
+          = fa_icon 'cog', class: 'icon'
+
   .groups
     .group
       .group__name 

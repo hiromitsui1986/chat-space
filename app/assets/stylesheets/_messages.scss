@@ -1,3 +1,4 @@
+@import "font-awesome";
 .wrapper {
   height: 100vh;
   .sideber {
@@ -24,7 +25,7 @@
       display: flex;
       justify-content: space-between;
       
-    &__box-list {
+    .sideber__header__box-list {
       display: flex;
     }  
     }
