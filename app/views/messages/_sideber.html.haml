@@ -4,20 +4,18 @@
       .sideber__header__box-name
         = current_user.name
       .sideber__header__box-list
-        =fa_icon "pencil-square-o"
+        = link_to new_group_path do
+          =fa_icon "pencil-square-o"
         = link_to edit_user_path(current_user) do
           = fa_icon 'cog', class: 'icon'
 
   .groups
     .group
-      .group__name 
-        sample-group          
-      .group__message 
-        sample-message  
-                
-    .group
-      .group__name
-        sample-group
-      .group__message  
-        sample-message
-        
+      - current_user.groups.each do |group|
+        = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
+
+    
