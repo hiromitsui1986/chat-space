@@ -18,16 +18,21 @@
         justify-content: space-between;
         width: 100%;
         font-weight: bold; 
+        color: white;
       
-      &__box-name {
+      &__box-name{
         width: 100%;
         font-weight: bold;
-        display: flex;
+        display: inline-block;
         justify-content: space-between;
-    
-        .sideber__header__box-list {
-          display: flex;
-          color: white;
+  
+        .sideber__header__box-list{
+          
+        color: white;
+          &--icon {
+            color: white;
+          }
+
         }  
       }
       }
@@ -38,14 +43,14 @@
       background-color: #2f3e51;
       padding: 20px 20px 0; 
 
-      .group {
-        margin-bottom: 40px;
+      .group {      
         &__name {
-          font-size: 15px;
+          font-size: 16px;
           margin-bottom: 5px;
           color: white;
         }
         &__message {
+          padding-bottom: 40px;
           font-size: 11px;
           color: white;
         }  
@@ -121,7 +126,7 @@
         border: none;
         float: left;
         height: 50px;
-        width: calc(100% - 165px);
+        width: calc(100% - 170px);
         padding: 0 0 0 10px;       
       }
       &__mask {
@@ -134,7 +139,7 @@
         &__image {
           font-size: 20px;
           line-height: 50px;
-          margin: 0 auto;
+          margin-right: 10px;
         } 
         .hidden {
           display: none;
