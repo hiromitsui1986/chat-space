@@ -6,51 +6,57 @@
     float: left;
     color: white;
 
-    &__header{
+    .sideber__header {
       background-color: #253141;
       height: 100px;
       display: flex;
       padding: 0 20px;
       align-items: center;
 
-    &__box {
-      display: flex;
-    justify-content: space-between;
-    width: 100%;
-    font-weight: bold; 
-    
-    &__box-name {
-      width: 100%;
-      font-weight: bold;
-      display: flex;
-      justify-content: space-between;
+      &__box {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-weight: bold; 
+        color: white;
       
-    .sideber__header__box-list {
-      display: flex;
-    }  
+      &__box-name{
+        width: 100%;
+        font-weight: bold;
+        display: inline-block;
+        justify-content: space-between;
+  
+        .sideber__header__box-list{
+          
+        color: white;
+          &--icon {
+            color: white;
+          }
+
+        }  
+      }
+      }
     }
-    }
+  
+    .groups {
+      height: calc(100vh - 100px);
+      background-color: #2f3e51;
+      padding: 20px 20px 0; 
+
+      .group {      
+        &__name {
+          font-size: 16px;
+          margin-bottom: 5px;
+          color: white;
+        }
+        &__message {
+          padding-bottom: 40px;
+          font-size: 11px;
+          color: white;
+        }  
+      }
     }
   }
-  .groups {
-    height: calc(100vh - 100px);
-    background-color: #2f3e51;
-    padding: 20px 20px 0;
-    overflow: scroll; 
-
-    .group{
-      margin-bottom: 40px;
-
-      &__name {
-        font-size: 15px;
-        margin-bottom: 5px;
-      }
-      &__message {
-        font-size: 11px;
-      }  
-      }
-  }
-
   .main{
     width: calc(100% - 300px);
     float: left;
@@ -106,10 +112,8 @@
         .under-content-message {
           margin-top: 10px;
           margin-bottom: 40px;
-          &__text {
-            font-size: 14px;
-            color: #434a54;
-          }         
+          font-size: 14px;
+          
         }
       }
     }
@@ -122,7 +126,7 @@
         border: none;
         float: left;
         height: 50px;
-        width: calc(100% - 165px);
+        width: calc(100% - 170px);
         padding: 0 0 0 10px;       
       }
       &__mask {
@@ -135,7 +139,7 @@
         &__image {
           font-size: 20px;
           line-height: 50px;
-          margin: 0 auto;
+          margin-right: 10px;
         } 
         .hidden {
           display: none;
