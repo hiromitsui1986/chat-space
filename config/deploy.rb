@@ -25,7 +25,7 @@ namespace :deploy do
   task :restart do
     invoke 'unicorn:restart'
   end
-
+end
   desc 'upload secrets.yml'
   task :upload do
     on roles(:app) do |host|
@@ -37,7 +37,7 @@ namespace :deploy do
   end
   before :starting, 'deploy:upload'
   after :finishing, 'deploy:cleanup'
-end
+
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
