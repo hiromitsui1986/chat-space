@@ -64,6 +64,7 @@ gem 'fog-aws'
 gem 'mini_magick'
 gem 'jquery-rails'
 gem 'pry-rails'
+gem 'unicorn-worker-killer'
 
 group :production do
   gem 'unicorn', '5.4.1'
