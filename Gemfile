@@ -67,7 +67,7 @@ gem 'pry-rails'
 gem 'unicorn-worker-killer'
 
 group :production do
-  gem 'unicorn', '5.5.0'
+  gem 'unicorn', '5.4.1'
 end
 
 group :development, :test do
