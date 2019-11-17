@@ -6,7 +6,7 @@
     float: left;
     color: white;
 
-    .sideber__header {
+    .sideber-header {
       background-color: #253141;
       height: 100px;
       display: flex;
@@ -20,21 +20,20 @@
         font-weight: bold; 
         color: white;
       
-      &__box-name{
-        width: 100%;
-        font-weight: bold;
-        display: inline-block;
-        justify-content: space-between;
-  
-        .sideber__header__box-list{
-          
-        color: white;
-          &--icon {
+        .sideber-header__box-name {
+          font-weight: bold;
+          display: inline-block;
+          justify-content: space-between;
+        }
+        .sideber-header__box-list {
+          display: inline;
+          #icon-group {
             color: white;
           }
-
-        }  
-      }
+          #edit-icon {
+            color:  white;
+          }
+        }
       }
     }
   
